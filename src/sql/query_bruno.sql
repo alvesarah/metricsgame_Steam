@@ -34,3 +34,11 @@ ON srd.steam_appid = s.appid
 ORDER BY s.owners DESC
 LIMIT 10;
 
+--Quais os 20 setups dos jogos mais caros?
+
+SELECT s.price, s.name, s.release_date, srd.minimum
+FROM steam AS s
+inner JOIN steam_requirements_data as srd
+ON srd.steam_appid = s.appid
+ORDER BY s.price DESC
+LIMIT 20;
