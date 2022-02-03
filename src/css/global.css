@@ -5,7 +5,13 @@
     --vt323: 'VT323', monospace;
     --lilas: #EAAEF2;
     --lilas-escuro: #CD77F2;
+    --lilas-escuro-opacidade: #cd77f27e;
     --roxo-claro: #914AD9;
     --roxo: #482973;
     --roxo-escuro: #181426;
+    --roxo-escuro-opacidade: #18142673;
+}
+
+button{
+    cursor: pointer;
 }

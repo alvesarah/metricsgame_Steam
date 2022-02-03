@@ -1,5 +1,60 @@
-main{
-    width: 100vh;
+body{
+    width: 100%;
     height: 100vh;
-    background-image: ;
+    background-image: url(../image/backgrounds/solzinho-introducao.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    background-color: var(--roxo-escuro-opacidade);
+    opacity: 0;
+}
+
+header > img{
+    width: 100px;
+    padding: 20px;
+}
+
+header > nav{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header > nav > a{
+    text-transform: uppercase;
+    font-family: var(--vt323);
+    font-size: 20px;
+    color: var(--lilas);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 150px;
+    height: 66px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    font-family: var(--vt323);
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--lilas);
+    border: none;
+
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: var(--roxo-escuro);
 }
