@@ -1,0 +1,39 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/backgrounds/background-fliperama-dentro.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+.personagem{
+    height: 70vh;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.caixa-dialogo{
+    width: 100%;
+    height: 30vh;
+    background-color: #ffffff7c;
+    padding: 25px;
+    overflow-y: hidden;
+}
+
+main > section > p{
+    font-family: var(--vt323);
+    font-size: 28px;
+}
+
+.btn-continuar{
+    text-align: end;
+    margin-top: 60px;
+    cursor: pointer;
+}

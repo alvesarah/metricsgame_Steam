@@ -1,0 +1,49 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/backgrounds/background-viela.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+main > section{
+    padding: 25px;
+    overflow-y: hidden;
+}
+
+.setas{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entrar{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.seta-esquerda, .seta-direita{
+    width: 60px;
+    cursor: pointer;
+}
+
+.caixa-dialogo{
+    height: 20vh;
+    background-color: #ffffff7c;
+    padding: 25px;
+    overflow-y: hidden
+}
+
+main > section > p{
+    font-family: var(--vt323);
+    font-size: 28px;
+}
