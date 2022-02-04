@@ -1,7 +1,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background-image: url(../image/backgrounds/background-farmacia-chuvosa.gif);
+  background-image: url(../image/backgrounds/laboratoria.gif);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -12,26 +12,16 @@ main {
   height: 100vh;
 }
 
-main > section {
-  padding: 25px;
-  overflow-y: hidden;
-}
-
-.setas {
-  height: 80vh;
+.personagem {
+  height: 70vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.seta-esquerda,
-.seta-direita {
-  width: 60px;
-  cursor: pointer;
+  justify-content: right;
+  align-items: flex-end;
 }
 
 .caixa-dialogo {
-  height: 20vh;
+  width: 100%;
+  height: 30vh;
   background-color: #ffffff7c;
   padding: 25px;
   overflow-y: hidden;
@@ -40,4 +30,10 @@ main > section {
 main > section > p {
   font-family: var(--vt323);
   font-size: 28px;
+}
+
+.btn-continuar {
+  text-align: end;
+  margin-top: 60px;
+  cursor: pointer;
 }
