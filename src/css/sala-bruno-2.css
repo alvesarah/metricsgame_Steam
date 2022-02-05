@@ -63,6 +63,11 @@ main > section > p {
   text-align: end;
   margin-top: 70px;
   cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--vt323);
+  font-size: 28px;
+  color: black;
 }
 
 /* MODAL */

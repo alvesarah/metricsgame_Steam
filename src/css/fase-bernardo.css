@@ -29,6 +29,7 @@ main > section {
   font-size: 30px;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
 }
 
 .seta-esquerda,
@@ -47,5 +48,4 @@ main > section {
 main > section > p {
   font-family: var(--vt323);
   font-size: 28px;
-  text-align: center;
 }
