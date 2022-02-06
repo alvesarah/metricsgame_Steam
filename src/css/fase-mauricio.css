@@ -27,6 +27,7 @@ main > section{
 .entrar{
     color: white;
     font-size: 30px;
+    font-family: var(--vt323);
     text-transform: uppercase;
     cursor: pointer;
 }
