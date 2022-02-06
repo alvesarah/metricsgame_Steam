@@ -1,58 +1,76 @@
--- Top 18 temas mais baixados
-SELECT steamspy_tags as tema, count(steamspy_tags) as quant_jogos, owners as downloads
-FROM steam.steam
-GROUP BY steamspy_tags
-ORDER BY owners DESC
-LIMIT 18;
-
--- Top 10 jogos de multiplayer mais jogados
-SELECT name, genres, steamspy_tags, owners
-FROM steam.steam
-WHERE steamspy_tags LIKE "%Multiplayer%"
-ORDER BY owners DESC
-LIMIT 10;
+-- QUERY UM
+-- Todos os estilos de jogos baseados no tema ordenados por melhores avaliações
+select count(name) as jogos, steamspy_tags
+from steam
+group by steamspy_tags
+order by jogos desc;
 
 
--- Top 10 jogos de terror mais jogados
-SELECT name, genres, steamspy_tags, owners
-FROM steam.steam
-WHERE steamspy_tags LIKE "%horror%"
-ORDER BY owners DESC
-LIMIT 10;
+-- QUERY DOIS
+-- Top 1 jogo de multiplayer com melhor avaliação
+(SELECT name as jogo, steamspy_tags as tema, positive_ratings as melhor_avaliacao
+FROM steam
+WHERE steamspy_tags LIKE "%Multiplayer%" AND steamspy_tags NOT LIKE "%FPS%"
+GROUP BY jogo
+ORDER BY melhor_avaliacao DESC
+LIMIT 1)
 
--- Top 10 jogos de zumbies mais jogados
-SELECT name, genres, steamspy_tags, owners
-FROM steam.steam
-WHERE steamspy_tags LIKE "%Zombies%"
-ORDER BY owners DESC
-LIMIT 10;
+union all
 
-
--- Top 10 jogos de FPS mais jogados
-SELECT name, genres, steamspy_tags, owners
-FROM steam.steam
+-- Top 1 jogos de FPS com melhor avaliação
+(SELECT name as jogo, steamspy_tags as tema, positive_ratings as melhor_avaliacao
+FROM steam
 WHERE steamspy_tags LIKE "%FPS%"
-ORDER BY owners DESC
-LIMIT 10;
+GROUP BY jogo
+ORDER BY melhor_avaliacao DESC
+LIMIT 1)
 
--- Top 10 jogos de ação mais jogados (Sem o sci-fi)
-SELECT name, genres, steamspy_tags, owners
-FROM steam.steam
+union all
+
+-- Top jogos de ação com melhor avaliação (Sem o sci-fi)
+(SELECT name as jogo, steamspy_tags as tema, positive_ratings as melhor_avaliacao
+FROM steam
 WHERE steamspy_tags LIKE "%Action%" AND steamspy_tags NOT LIKE "%Sci-fi%"
-ORDER BY owners
-DESC LIMIT 10;
+GROUP BY jogo
+ORDER BY melhor_avaliacao DESC
+LIMIT 1)
 
--- Top 10 jogos de Sci-fi mais jogados
-SELECT name, genres, steamspy_tags, owners
-FROM steam.steam
+union all
+
+-- Top 1 jogos de Sci-fi com melhor avaliação
+(SELECT name as jogo, steamspy_tags as tema, positive_ratings as melhor_avaliacao
+FROM steam
 WHERE steamspy_tags LIKE "%Sci-fi%"
-ORDER BY owners DESC
-LIMIT 10;
+GROUP BY jogo
+ORDER BY melhor_avaliacao DESC
+LIMIT 1)
 
+union all
 
--- Top 10 jogos de RPG mais jogados
-SELECT name, genres, steamspy_tags, owners
-FROM steam.steam
+-- Top 1 jogos de RPG com melhor avaliação
+(SELECT name as jogo, steamspy_tags as tema, positive_ratings as melhor_avaliacao
+FROM steam
 WHERE steamspy_tags LIKE "%RPG%"
+GROUP BY jogo
+ORDER BY melhor_avaliacao DESC
+LIMIT 1)
+
+union all
+
+-- Top 1 jogos de terror com melhor avaliação
+(SELECT name as jogo, steamspy_tags as tema, positive_ratings as melhor_avaliacao
+FROM steam
+WHERE steamspy_tags LIKE "%horror%"
+GROUP BY jogo
+ORDER BY melhor_avaliacao DESC
+LIMIT 1)
+
+union all
+
+-- Top 1 jogos de zumbies com melhor avaliação
+(SELECT name as jogo, steamspy_tags as tema, positive_ratings as melhor_avaliacao
+FROM steam
+WHERE steamspy_tags LIKE "%Zombies%"
+GROUP BY jogo
 ORDER BY owners DESC
-LIMIT 10;
+LIMIT 1);
