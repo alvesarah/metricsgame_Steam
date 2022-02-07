@@ -7,9 +7,13 @@ body {
   overflow-x: hidden;
 }
 
+header{
+  height: 10vh;
+}
+
 main {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 main > section {
@@ -18,7 +22,7 @@ main > section {
 }
 
 .setas {
-  height: 80vh;
+  height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,8 +31,8 @@ main > section {
 .entrar {
   color: white;
   font-size: 30px;
+  font-family: var(--vt323);
   text-transform: uppercase;
-  cursor: pointer;
   text-align: center;
 }
 

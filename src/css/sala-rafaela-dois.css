@@ -12,18 +12,21 @@ body {
   height: 100vh;
 }
 
-.perguntas {
-  height: 70vh;
+.perguntas{
+  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: absolute;
-  left: 5%;
+  left: 30%;
   top: 2%;
   z-index: 100;
 }
 
-.perguntas > a {
+.perguntas > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff7c;
   border: none;
   border-radius: 15px;
@@ -33,13 +36,17 @@ body {
   color: var(--vermelho);
   text-transform: uppercase;
   text-align: center;
-
-  -webkit-text-stroke-width: 0.5px;
+  
+  -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
 }
 
+.perguntas > a:hover{
+  color: var(--roxo-escuro);
+}
+
 .personagem {
-  height: 75vh;
+  height: 70vh;
   position: relative;
   display: flex;
   justify-content: right;
@@ -126,11 +133,13 @@ main > section > p {
   animation-duration: 0.5s;
 }
 
-header {
+header{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin: 30px;
+  font-family: var(--vt323);
+  font-size: 30px;
 }
 
 .modal > main {

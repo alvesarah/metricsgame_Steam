@@ -25,21 +25,18 @@ main {
   background-color: #ffffff7c;
   padding: 25px;
   overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
-main > section > p {
+main > section > p, main > section > a{
   font-family: var(--vt323);
-  font-size: 28px;
-}
-
-a,
-.btn-continuar {
-  text-align: end;
-  margin-top: 60px;
-  cursor: pointer;
-  list-style: none;
-  text-decoration: none;
-  font-family: var(--vt323);
-  font-size: 28px;
+  font-size: 30px;
   color: black;
+}
+
+.btn-continuar{
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
