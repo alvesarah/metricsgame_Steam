@@ -1,12 +1,14 @@
 -- QUERY UM
--- Todos os estilos de jogos baseados no tema ordenados por melhores avaliações
-select count(name) as jogos, steamspy_tags
+-- Todos os temas de jogos, ordenados por melhores avaliações.
+select count(name) as jogos, steamspy_tags as tema, positive_ratings as melhores_avaliacoes
 from steam
 group by steamspy_tags
-order by jogos desc;
+order by melhores_avaliacoes desc
+limit 15;
 
 
 -- QUERY DOIS
+-- Avaliação de temas mais famosos e o jogo com melhor avaliação entre eles.
 -- Top 1 jogo de multiplayer com melhor avaliação
 (SELECT name as jogo, steamspy_tags as tema, positive_ratings as melhor_avaliacao
 FROM steam
