@@ -1,44 +1,28 @@
--- Quais os 10 setups para os jogos mais bem avaliados?
+-- Quais os 5 setups para os jogos mais bem avaliados da steam?
 
-SELECT s.positive_ratings, s.name, s.release_date, srd.minimum 
+SELECT srd.steam_appid , s.positive_ratings as avaliacoes_positivas , s.name as jogos , srd.minimum as setup
 FROM steam AS s
 INNER JOIN steam_requirements_data as srd
 ON srd.steam_appid = s.appid
 ORDER BY s.positive_ratings DESC
-LIMIT 10;
+LIMIT 5;
 
---Quais os 10 setups para os jogos mais jogados?
+--Quais os 5 setups para os jogos mais jogados da steam?
 
-SELECT s.owners, s.name, s.release_date, srd.minimum 
+SELECT  s.appid , s.owners as quantidade_de_downloads, s.name as jogos , srd.minimum as setup 
 FROM steam AS s
 INNER JOIN steam_requirements_data as srd
 ON srd.steam_appid = s.appid
 ORDER BY s.owners DESC
-LIMIT 10;
+LIMIT 5;
 
---Quais os 10 setups para linux dos jogos mais jogados?
+--Quais os 3 setups dos jogos mais jogados da categoria multi-player?
 
-SELECT s.owners, s.name, s.release_date, srd.linux_requirements
+SELECT srd.steam_appid , s.name, s.average_playtime,srd.minimum, s.categories
 FROM steam AS s
 INNER JOIN steam_requirements_data as srd
 ON srd.steam_appid = s.appid
-ORDER BY s.owners DESC
-LIMIT 10;
+where categories like 'Multi-player'
+order by average_playtime desc
+LIMIT 3 ;
 
---Quais os 10 setups para mac dos jogos mais jogados?
-
-SELECT s.owners, s.name, s.release_date, srd.mac_requirements
-FROM steam AS s
-INNER JOIN steam_requirements_data as srd
-ON srd.steam_appid = s.appid
-ORDER BY s.owners DESC
-LIMIT 10;
-
---Quais os 20 setups dos jogos mais caros?
-
-SELECT s.price, s.name, s.release_date, srd.minimum
-FROM steam AS s
-inner JOIN steam_requirements_data as srd
-ON srd.steam_appid = s.appid
-ORDER BY s.price DESC
-LIMIT 20;
