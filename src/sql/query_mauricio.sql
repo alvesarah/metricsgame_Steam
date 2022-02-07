@@ -1,33 +1,21 @@
--- TOP 10 DESENVOLVEDORES COM JOGOS MAIS BAIXADOS:
+-- TOP 10 DESENVOLVEDORES QUE TEM OS JOGOS MAIS JOGADOS
 
 SELECT 
-    developer, owners
+    developer AS desenvolvedores,
+    name AS nome_jogo,
+    average_playtime AS tempo_jogado
 FROM
     steam
-ORDER BY developer DESC
-LIMIT 10;
-
--- QUANTOS JOGOS DE FPS SAO EM PRIMEIRA PESSOA:
-
-SELECT 
-    COUNT(steam.name) AS qtd_jogos,
-    steam.steamspy_tags,
-    steamspy_tag_data.first_person
-FROM
-    steam
-        INNER JOIN
-    steamspy_tag_data ON steam.appid = steamspy_tag_data.appid
 WHERE
-    steamspy_tag_data.first_person > 0
-        AND steam.steamspy_tags LIKE '%FPS%';
+    average_playtime > 0
+GROUP BY developer
+LIMIT 10;	
 
-
--- QUAIS JOGOS CO-OP POSSUI AVALIACOES POSITIVAS MAIORES QUE NEGATIVAS:     
+-- JOGOS CO-OP COM AVALIACOES POSITIVAS MAIORES QUE NEGATIVAS
 
 SELECT 
     steam.name AS jogos_co_op,
-    steamspy_tag_data.co_op,
-    steam.positive_ratings
+    steam.positive_ratings AS avaliacoes_positivas
 FROM
     steam
         INNER JOIN
@@ -35,15 +23,15 @@ FROM
 WHERE
     steamspy_tag_data.co_op > 0
         AND steam.positive_ratings > steam.negative_ratings
-ORDER BY steam.positive_ratings DESC;
+ORDER BY steam.positive_ratings DESC
+LIMIT 15;
 
 
--- TOP 5 JOGOS SINGLEPLAYERSPOSSUEM AVALIACOES NEGATIVAS MAIORES QUE POSITIVAS:
+-- JOGOS SINGLE-PLAYER COM AVALIACOES NEGATIVAS MAIORES QUE POSITIVAS
 
 SELECT 
     steam.name AS jogos_single_player,
-    steamspy_tag_data.singleplayer,
-    steam.negative_ratings
+    steam.negative_ratings AS avaliacoes_negativas
 FROM
     steam
         INNER JOIN
@@ -52,17 +40,4 @@ WHERE
     steamspy_tag_data.singleplayer > 0
         AND steam.positive_ratings < steam.negative_ratings
 ORDER BY steam.negative_ratings DESC
-LIMIT 5;
-
-
--- QUAIS JOGOS ESTAO INCLUSOS NOS E-SPORTS:
-
-SELECT 
-    steam.name AS jogos_esports,
-    steamspy_tag_data.e_sports
-FROM
-    steam
-        INNER JOIN
-    steamspy_tag_data ON steam.appid = steamspy_tag_data.appid
-WHERE
-    steamspy_tag_data.e_sports > 0;
+LIMIT 15;
