@@ -7,38 +7,10 @@ body{
     overflow-y: hidden;
 }
 
-/* HEADER */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 110px;
-    background-color: var(--roxo-escuro-opacidade);
-    opacity: 0;
-}
-
-header > img{
-    width: 100px;
-    padding: 20px;
-}
-
-header > nav{
-    width: 20%;
-    display: flex;
-    justify-content: space-around;
-}
-
-header > nav > a{
-    text-transform: uppercase;
-    font-family: var(--vt323);
-    font-size: 20px;
-    color: var(--lilas);
-}
-
 main{
     width: 100%;
     height: 100vh;
-    margin-top: 10rem;
+    margin-top: 16rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,4 +32,9 @@ a{
 
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: var(--roxo-escuro);
+}
+
+a:hover{
+    color: var(--roxo-escuro);
+    background-color: var(--lilas);
 }

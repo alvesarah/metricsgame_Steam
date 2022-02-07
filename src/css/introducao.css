@@ -75,3 +75,8 @@ a{
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: var(--roxo-escuro);
 }
+
+a:hover{
+    color: var(--roxo-escuro);
+    background-color: var(--lilas);
+}

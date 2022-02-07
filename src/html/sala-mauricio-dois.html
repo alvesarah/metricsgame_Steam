@@ -12,16 +12,16 @@
     </head>
     <body>
         <header>
-
+            <audio controls loop>
+                <source src="../audio/fase-mauricio-dentro.mp3">
+            </audio>  
         </header>
         <main class="container">
             <section class="perguntas">
-                <a href="#pergunta-um">• Todos os estilos de jogos baseados no tema</a>
-                <a>• Top 10 desenvolvedores com jogos mais baixados</a>
-                <a>• Quantos jogos de fps são em 1 pessoa</a>
-                <a>• Quais jogos de co-op (cooperativo) são melhores avaliados</a>
-                <a>• Top 5 jogos single-player menos avaliados</a>
-                <a>• Quais jogos estão inclusos nos e-sports (esporte eletrônico)</a>
+                <a href="#pergunta-um">• Top 10 desenvolvedores com jogos mais jogados</a>
+                <a href="#pergunta-dois">• Jogos co-op com avaliações positivas maiores que negativas</a>
+                <a href="#pergunta-tres">• Jogos single-player com avaliações negativas maiores que positivas</a>
+                <a href="#pergunta-quatro">• Jogos que mais estão presentes nos e-sports(esporte eletrônico)</a>
             </section>
             <section class="personagem">
                 <img class="img-personagem" src="../image/personagens/png/mauricio-png.png" alt="">
@@ -37,11 +37,44 @@
         <section id="pergunta-um" class="modal-container">
             <div class="modal">
                 <header>
-                    <h3 class="subtitulo-modal">Todos os estilos de jogos baseados no tema</h3>
+                    <h3 class="subtitulo-modal">Top 10 desenvolvedores com jogos mais jogados</h3>
                     <a href="#" class="closebtn">×</a>
                 </header>
                 <main>
-                    <img src="../image/imagem-exemplo-grafico.png" alt="">
+                    <img src="../sql/graficos/mauricio/grafico_developers_jogos_mais_jogados.jpg" alt="">
+                </main>
+            </div>
+        </section>
+        <section id="pergunta-dois" class="modal-container">
+            <div class="modal">
+                <header>
+                    <h3 class="subtitulo-modal">Jogos co-op com avaliações positivas maiores que negativas</h3>
+                    <a href="#" class="closebtn">×</a>
+                </header>
+                <main>
+                    <img src="../sql/graficos/mauricio/query_jogos_cop_avaliacoes_positivas_maiores_que_negativas.jpg" alt="">
+                </main>
+            </div>
+        </section>
+        <section id="pergunta-tres" class="modal-container">
+            <div class="modal">
+                <header>
+                    <h3 class="subtitulo-modal">Jogos single-player com avaliações negativas maiores que positivas</h3>
+                    <a href="#" class="closebtn">×</a>
+                </header>
+                <main>
+                    <img src="../sql/graficos/mauricio/query_jogos_single_player_negativa_maiores_que_positivas.jpg" alt="">
+                </main>
+            </div>
+        </section>
+        <section id="pergunta-quatro" class="modal-container">
+            <div class="modal">
+                <header>
+                    <h3 class="subtitulo-modal">Jogos que mais estão presentes nos e-sports(esporte eletrônico)</h3>
+                    <a href="#" class="closebtn">×</a>
+                </header>
+                <main>
+                    <img src="../sql/graficos/mauricio/grafico_jogos_esports.jpg" alt="">
                 </main>
             </div>
         </section>
