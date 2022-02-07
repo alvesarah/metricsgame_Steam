@@ -41,3 +41,15 @@ WHERE
         AND steam.positive_ratings < steam.negative_ratings
 ORDER BY steam.negative_ratings DESC
 LIMIT 15;
+
+-- JOGOS QUE MAIS ESTAO PRESENTES NOS ESPORTS (ESPORTE ELETRONICO)
+
+SELECT 
+    steam.name as jogos_esports,
+    steamspy_tag_data.e_sports 
+FROM
+    steam
+        INNER JOIN
+    steamspy_tag_data ON steam.appid = steamspy_tag_data.appid
+WHERE
+    steamspy_tag_data.e_sports > 0;
