@@ -132,7 +132,7 @@ ORDER BY
     name ASC 
 LIMIT 15;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940418479411044403/Jogos_que_precisam_ter_18_anos_do_genero_acao_que_rodam_apenas_em_windows.png?width=785&height=452)
 
 ### Pergunta 3
 
