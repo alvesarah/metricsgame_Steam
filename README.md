@@ -361,7 +361,7 @@ WHERE
 ORDER BY 
     positive_ratings DESC;
 ```
-![image](https://media.discordapp.net/attachments/939971983536439368/940451226326278175/jogosbaratosavaliacaopositiva.png?width=755&height=452)
+![image](https://media.discordapp.net/attachments/939971983536439368/940473374981898290/jogosgratisvalve.png?width=784&height=452)
 
 ### Pergunta 14
 
