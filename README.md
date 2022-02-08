@@ -110,7 +110,7 @@ WHERE
     AND average_playtime > 10000
 LIMIT 5;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940449470611587113/Top_5_jogos_mais_populares_Com_base_no_tempo_gasto_jogando_e_segundo_as_avaliacoes_positivas_page-0001.jpg?width=781&height=452)
 
 ### Pergunta 2
 
@@ -132,7 +132,7 @@ ORDER BY
     name ASC 
 LIMIT 15;
 ```
-![image](https://media.discordapp.net/attachments/939971983536439368/940418479411044403/Jogos_que_precisam_ter_18_anos_do_genero_acao_que_rodam_apenas_em_windows.png?width=785&height=452)
+![image](https://media.discordapp.net/attachments/939971983536439368/940449684793729065/jogos_18.png?width=783&height=452)
 
 ### Pergunta 3
 
@@ -150,7 +150,7 @@ SELECT
 FROM
     steam; 
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940449623825350738/Porcentagem_jogos_gratuitos.png?width=781&height=452)
 
 ### Pergunta 4
 
@@ -172,7 +172,7 @@ ORDER BY
     s.positive_ratings DESC
 LIMIT 5;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940415442483302400/setup_dos_jogos_com_melhor_ratingBRUNO_page-0001.jpg?width=781&height=452)
 
 ### Pergunta 5
 
@@ -193,7 +193,7 @@ ORDER BY
     s.owners DESC
 LIMIT 5;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940415442177130516/GRAFICO_QTD_DOWNLOADS_E_SETUPS_BRUNO_page-0001.jpg?width=781&height=452)
 
 ### Pergunta 6
 
@@ -217,7 +217,7 @@ ORDER BY
     average_playtime DESC
 LIMIT 3;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940415442906914886/SETUPS_DOS_JOGOS_MULTI-PLAYERSBRUNO_page-0001.jpg?width=781&height=452)
 
 ### Pergunta 7
 
@@ -319,7 +319,7 @@ ORDER BY
     positive_ratings DESC
 LIMIT 10;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940450880031957043/graficoAvaliacaoPositiva.png?width=783&height=452)
 
 ### Pergunta 12
 
@@ -339,7 +339,7 @@ ORDER BY
     positive_ratings DESC 
 LIMIT 10;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940451226326278175/jogosbaratosavaliacaopositiva.png?width=755&height=452)
 
 ### Pergunta 13
 
@@ -361,7 +361,7 @@ WHERE
 ORDER BY 
     positive_ratings DESC;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940451226326278175/jogosbaratosavaliacaopositiva.png?width=755&height=452)
 
 ### Pergunta 14
 
