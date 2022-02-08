@@ -300,6 +300,213 @@ WHERE
 ```
 ![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
 
+### Pergunta 11
+
+- 10 jogos de ação recomendados para 18 anos com melhor avaliação
+
+```sql
+SELECT 
+    name,
+    positive_ratings, 
+    required_age, 
+    genres
+FROM 
+    steam
+WHERE 
+    required_age >= 18 
+    AND genres = 'Action'
+ORDER BY 
+    positive_ratings DESC
+LIMIT 10;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 12
+
+- 10 Jogos mais baratos com avaliações mais positivas
+
+```sql
+SELECT 
+    name, 
+    price, 
+    positive_ratings 
+FROM 
+    steam 
+WHERE 
+    price > 0
+ORDER BY 
+    price, 
+    positive_ratings DESC 
+LIMIT 10;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 13
+
+- Jogos multi-player desenvolvidos pela Valve com maiores avaliações
+
+```sql
+SELECT 
+    developer, 
+    name, 
+    categories, 
+    positive_ratings
+FROM 
+    steam
+WHERE 
+    categories NOT LIKE '%Single-player%'
+    AND categories LIKE '%Multi-Player%'
+    AND price = 0
+    AND developer LIKE '%Valve%'
+ORDER BY 
+    positive_ratings DESC;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 14
+
+- Todos os temas de jogos, ordenados por melhores avaliações
+
+```sql
+SELECT 
+    count(name) as jogos, 
+    steamspy_tags as tema, 
+    positive_ratings as melhores_avaliacoes
+FROM 
+    steam
+GROUP BY 
+    steamspy_tags
+ORDER BY 
+    melhores_avaliacoes desc
+LIMIT 15;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 15
+
+- Avaliação de temas mais famosos e o jogo com melhor avaliação entre eles
+
+```sql
+(SELECT 
+    name as jogo, 
+    steamspy_tags as tema, 
+    positive_ratings as melhor_avaliacao
+FROM 
+    steam
+WHERE 
+    steamspy_tags LIKE "%Multiplayer%" 
+    AND steamspy_tags NOT LIKE "%FPS%"
+GROUP BY 
+    jogo
+ORDER BY 
+    melhor_avaliacao DESC
+LIMIT 1)
+
+union all
+
+-- Top 1 jogos de FPS com melhor avaliação
+(SELECT 
+    name as jogo, 
+    steamspy_tags as tema, 
+    positive_ratings as melhor_avaliacao
+FROM 
+    steam
+WHERE 
+    steamspy_tags LIKE "%FPS%"
+GROUP BY 
+    jogo
+ORDER BY 
+    melhor_avaliacao DESC
+LIMIT 1)
+
+union all
+
+-- Top jogos de ação com melhor avaliação (Sem o sci-fi)
+(SELECT 
+    name as jogo, 
+    steamspy_tags as tema, 
+    positive_ratings as melhor_avaliacao
+FROM 
+    steam
+WHERE 
+    steamspy_tags LIKE "%Action%" 
+    AND steamspy_tags NOT LIKE "%Sci-fi%"
+GROUP BY 
+    jogo
+ORDER BY 
+    melhor_avaliacao DESC
+LIMIT 1)
+
+union all
+
+-- Top 1 jogos de Sci-fi com melhor avaliação
+(SELECT 
+    name as jogo, 
+    steamspy_tags as tema, 
+    positive_ratings as melhor_avaliacao
+FROM 
+    steam
+WHERE 
+    steamspy_tags LIKE "%Sci-fi%"
+GROUP BY 
+    jogo
+ORDER BY 
+    melhor_avaliacao DESC
+LIMIT 1)
+
+union all
+
+-- Top 1 jogos de RPG com melhor avaliação
+(SELECT 
+    name as jogo,
+    steamspy_tags as tema,
+    positive_ratings as melhor_avaliacao
+FROM 
+    steam
+WHERE 
+    steamspy_tags LIKE "%RPG%"
+GROUP BY 
+    jogo
+ORDER BY 
+    melhor_avaliacao DESC
+LIMIT 1)
+
+union all
+
+-- Top 1 jogos de terror com melhor avaliação
+(SELECT 
+    name as jogo,
+    steamspy_tags as tema,
+    positive_ratings as melhor_avaliacao
+FROM 
+    steam
+WHERE 
+    steamspy_tags LIKE "%horror%"
+GROUP BY 
+    jogo
+ORDER BY 
+    melhor_avaliacao DESC
+LIMIT 1)
+
+union all
+
+-- Top 1 jogos de zumbies com melhor avaliação
+(SELECT 
+    name as jogo, 
+    steamspy_tags as tema, 
+    positive_ratings as melhor_avaliacao
+FROM 
+    steam
+WHERE 
+    steamspy_tags LIKE "%Zombies%"
+GROUP BY 
+    jogo
+ORDER BY 
+    owners DESC
+LIMIT 1);
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
 ## 🦸 Autores
 
 <table>
