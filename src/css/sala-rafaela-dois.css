@@ -12,7 +12,7 @@ body {
   height: 100vh;
 }
 
-.perguntas{
+.perguntas {
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ body {
   z-index: 100;
 }
 
-.perguntas > a{
+.perguntas > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +36,12 @@ body {
   color: var(--vermelho);
   text-transform: uppercase;
   text-align: center;
-  
-  -webkit-text-stroke-width: .5px;
+
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
 }
 
-.perguntas > a:hover{
+.perguntas > a:hover {
   color: var(--roxo-escuro);
 }
 
@@ -122,7 +122,7 @@ main > section > p {
   background-color: white;
   overflow-x: hidden;
   width: 80%;
-  height: 80vh;
+  height: 100vh;
   box-shadow: 0 0 0 10px var(--preto);
   position: relative;
   overflow-y: hidden;
@@ -133,7 +133,7 @@ main > section > p {
   animation-duration: 0.5s;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
