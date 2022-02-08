@@ -58,7 +58,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 $ git clone https://github.com/alvesarah/metricsgame_Steam.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd metricsGame
+$ cd metricsgame_Steam
 
 # Abrir projeto no vscode
 $ code .
