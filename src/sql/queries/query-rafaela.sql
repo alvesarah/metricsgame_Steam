@@ -6,12 +6,13 @@ ORDER BY positive_ratings DESC
 LIMIT 10;
 
 -- 10 Jogos mais baratos com avaliações mais positivas --
- SELECT name, price, positive_ratings from steam 
- WHERE price > 0
- ORDER BY price, positive_ratings  DESC LIMIT 10;
+SELECT name, price, positive_ratings 
+FROM steam 
+WHERE price > 0
+ORDER BY price, positive_ratings  DESC 
+LIMIT 10;
 
-
--- Jogos Multi Player desenvolvidos pela Valve com maiores avaliações --
+-- Jogos multi-player desenvolvidos pela Valve com maiores avaliações --
 SELECT developer, name, categories, positive_ratings
 FROM steam
 WHERE categories NOT LIKE '%Single-player%'
