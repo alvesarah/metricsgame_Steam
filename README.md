@@ -55,10 +55,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:sashamoon/projetoHadesBarbearia.git
+$ git clone https://github.com/alvesarah/metricsgame_Steam.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd projetoHadesBarbearia
+$ cd metricsGame
 
 # Abrir projeto no vscode
 $ code .
@@ -79,9 +79,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[JavaScript](https://www.javascript.com/)**
 
 #### **Banco de dados e gráficos**
-• MySQL
-• Workbench
-• PowerBI
+- MySQL
+- Workbench
+- PowerBI
 
 #### **Utilitários**
 
@@ -100,7 +100,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <tr>
 <td>
 <a href="https://github.com/sashamoon">
-    <img style="border-radius: 50%;" src="./src/assets/integrantes/bernardo-moura" width="100px;" alt="">
+    <img style="border-radius: 50%;" src="./src/assets/integrantes/bernardo-moura.jpg" width="100px;" alt="">
     <br>
     <sub><b>Bernardo Moura</b></sub>
 </a> 
@@ -123,7 +123,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <tr>
 <td>
 <a href="https://github.com/sashamoon">
-    <img style="border-radius: 50%;" src="./src/assets/integrantes/bruno-santana-de-sa" width="100px;" alt="">
+    <img style="border-radius: 50%;" src="./src/assets/integrantes/bruno-santana-de-sa.jpg" width="100px;" alt="">
     <br>
     <sub><b>Bruno Santana de Sá</b></sub>
 </a> 
@@ -146,7 +146,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <tr>
 <td>
 <a href="https://github.com/sashamoon">
-    <img style="border-radius: 50%;" src="./src/assets/integrantes/mauricio-oliveira" width="100px;" alt="">
+    <img style="border-radius: 50%;" src="./src/assets/integrantes/mauricio-oliveira.jpg" width="100px;" alt="">
     <br>
     <sub><b>Mauricio Oliveira</b></sub>
 </a> 
@@ -192,7 +192,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <tr>
 <td>
 <a href="https://github.com/sashamoon">
-    <img style="border-radius: 50%;" src="./src/assets/sarah-alves.jpg" width="100px;" alt="">
+    <img style="border-radius: 50%;" src="./src/assets/integrantes/sarah-alves.jpg" width="100px;" alt="">
     <br>
     <sub><b>Sarah Alves</b></sub>
 </a>
