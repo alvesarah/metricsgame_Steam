@@ -1,15 +1,21 @@
--- Porcentagem de jogos single-player em relação a todos os jogos--
-SELECT ROUND(((SELECT count(categories) FROM steam WHERE categories LIKE "Single-player")/count(categories) * 100),2)
-AS porcentagem_categories FROM steam;
-
--- Porcentagem de jogos de ação em relação a todos os jogos--
-SELECT Round(((SELECT count(genres) AS action_genre FROM steam WHERE genres LIKE "action")/count(genres) * 100),2) 
-AS action_percentage FROM steam;
-
--- Desenvolvedores com maior número de avaliações negativas dos jogos Multi-Player de 2014--
-SELECT developer, name, categories, negative_ratings, release_date
+-- 10 jogos de ação recomendados para 18 anos com melhor avaliação --
+SELECT name, positive_ratings, required_age, genres
 FROM steam
-WHERE categories NOT LIKE '%single-player%'
+WHERE required_age >= 18 and genres = 'Action'
+ORDER BY positive_ratings DESC
+LIMIT 10;
+
+-- 10 Jogos mais baratos com avaliações mais positivas --
+ SELECT name, price, positive_ratings from steam 
+ WHERE price > 0
+ ORDER BY price, positive_ratings  DESC LIMIT 10;
+
+
+-- Jogos Multi Player desenvolvidos pela Valve com maiores avaliações --
+SELECT developer, name, categories, positive_ratings
+FROM steam
+WHERE categories NOT LIKE '%Single-player%'
 AND categories LIKE '%Multi-Player%'
-AND release_date LIKE '2014%'
-ORDER BY negative_ratings DESC;
+AND price = 0
+AND developer LIKE '%Valve%'
+ORDER BY positive_ratings DESC;
