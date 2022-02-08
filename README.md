@@ -192,7 +192,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <tr>
 <td>
 <a href="https://github.com/sashamoon">
-    <img style="border-radius: 50%;" src="./src/assets/integrantes/sarah-alves.jpg" width="100px;" height="100px;" alt="">
+    <img style="border-radius: 50%;" src="./src/assets/integrantes/sarah-alves.jpg" width="100px;" alt="">
     <br>
     <sub><b>Sarah Alves</b></sub>
 </a>
