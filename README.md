@@ -380,7 +380,7 @@ ORDER BY
     melhores_avaliacoes desc
 LIMIT 15;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940550926127738890/todos_os_temas_de_jogos__ordenados_por_melhores_avaliacoes.jpg?width=781&height=452)
 
 ### Pergunta 15
 
@@ -505,7 +505,7 @@ ORDER BY
     owners DESC
 LIMIT 1);
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940550925720903700/avaliacao_de_temas_mais_famosos_e_o_jogo_com_melhor_avaliacao_entre_eles.png?width=803&height=452)
 
 ## 🦸 Autores
 
