@@ -6,38 +6,75 @@ function typeWritter(elemento){
        
     });
 }
+function retornaResetbtn() {
+ return  $('.btn-reset').css('display', 'flex')
+  
+}
+
+function resetNone() {
+    return  $('.btn-reset').css('display', 'none')
+}
+
 
 const titulo = document.querySelector('p');
 
 typeWritter(titulo);
 
-let arrPerguntas = []
-function adiciona() {
-    function adiciona(pergunta) {arrPerguntas.push(pergunta)}
-    $('#perguntaUm').click(()=>{
-        adiciona('perguntaUm' )
-        $('#perguntaUm').css('display', 'none')
+
+function adicionaReset() {
+    let contador = 0
+    $('.perguntaUm').click(()=>{
+        contador++
+        $('.perguntaUm').css('display', 'none')
     }) 
-    $('#perguntaDois').click(()=>{
-        adiciona('perguntaDois')
-        $('#perguntaDois').css('display', 'none')
+    $('.perguntaDois').click(()=>{
+        contador++
+        $('.perguntaDois').css('display', 'none')
     }) 
-    $('#perguntaTres').click(()=>{
-        adiciona('perguntaTres')
-        $('#perguntaTres').css('display', 'none')
+    $('.perguntaTres').click(()=>{
+        contador++
+        $('.perguntaTres').css('display', 'none')
     }) 
-    $('#perguntaQuatro').click(()=>{
-        adiciona('perguntaQuatro')
-        $('#perguntaQuatro').css('display', 'none')
+    $('.perguntaQuatro').click(()=>{
+        contador++
+        $('.perguntaQuatro').css('display', 'none')
     }) 
-    
+
     let myInterval = setInterval(()=>{
-        if (arrPerguntas.length > 0) {
-            if (arrPerguntas.length >= 3 ) {
-               
-                clearInterval(myInterval)
-            }       
-        }
-       }, 1000)
+        localStorage.setItem('contador', contador)
+       }, 0)
+
+      let contador2 = localStorage.getItem('contador')  
+      if (contador2 >= 2) {
+          contador2 = 3
+           clearInterval(myInterval) 
+       }
+       $('.btn-reset').click((e)=>localStorage.clear())
+       
 }
-adiciona();
+
+
+adicionaReset();
+
+
+function reverEstatistica() {
+    const perguntaUm = $('.perguntaUm')
+    const perguntaDois = $('.perguntaDois')
+    const perguntaTres = $('.perguntaTres')
+    const perguntaQuatro = $('.perguntaQuatro')
+
+    if ((perguntaUm.css('display', 'none'))) { 
+        perguntaUm.css('display', 'flex')
+        perguntaDois.css('display', 'flex')
+        perguntaTres.css('display', 'flex')
+        perguntaQuatro.css('display', 'flex')
+    } 
+     
+}
+
+$('.btn-voltar-estatisca').click((e)=>{
+    e.preventDefault()
+    reverEstatistica()
+})
+
+
