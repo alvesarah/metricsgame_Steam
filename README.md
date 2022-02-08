@@ -128,7 +128,9 @@ WHERE
     required_age = 18
         AND genres LIKE 'Action'
         AND platforms = 'windows'
-ORDER BY name ASC LIMIT 15;
+ORDER BY 
+    name ASC 
+LIMIT 15;
 ```
 ![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
 
@@ -155,14 +157,19 @@ FROM
 - Quais os 5 setups para os jogos mais bem avaliados da steam?
 
 ```sql
-SELECT srd.steam_appid, 
-       s.positive_ratings as avaliacoes_positivas, 
-       s.name as jogos, 
-       srd.minimum as setup
-FROM steam AS s
-INNER JOIN steam_requirements_data as srd
-ON srd.steam_appid = s.appid
-ORDER BY s.positive_ratings DESC
+SELECT 
+    srd.steam_appid, 
+    s.positive_ratings as avaliacoes_positivas, 
+    s.name as jogos, 
+    srd.minimum as setup
+FROM 
+    steam AS s
+INNER JOIN 
+    steam_requirements_data as srd
+ON 
+    srd.steam_appid = s.appid
+ORDER BY 
+    s.positive_ratings DESC
 LIMIT 5;
 ```
 ![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
@@ -176,10 +183,14 @@ SELECT  s.appid,
         s.owners as quantidade_de_downloads,
         s.name as jogos, 
         srd.minimum as setup 
-FROM steam AS s
-INNER JOIN steam_requirements_data as srd
-ON srd.steam_appid = s.appid
-ORDER BY s.owners DESC
+FROM 
+    steam AS s
+INNER JOIN 
+    steam_requirements_data as srd
+ON 
+    srd.steam_appid = s.appid
+ORDER BY 
+    s.owners DESC
 LIMIT 5;
 ```
 ![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
@@ -194,11 +205,16 @@ SELECT srd.steam_appid,
        s.average_playtime,
        srd.minimum, 
        s.categories
-FROM steam AS s
-INNER JOIN steam_requirements_data as srd
-ON srd.steam_appid = s.appid
-where categories like 'Multi-player'
-order by average_playtime desc
+FROM 
+    steam AS s
+INNER JOIN 
+    steam_requirements_data as srd
+ON 
+    srd.steam_appid = s.appid
+WHERE 
+    categories LIKE 'Multi-player'
+ORDER BY 
+    average_playtime DESC
 LIMIT 3;
 ```
 ![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
@@ -216,7 +232,8 @@ FROM
     steam
 WHERE
     average_playtime > 0
-GROUP BY developer
+GROUP BY 
+    developer
 LIMIT 10;	
 ```
 ![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
@@ -231,12 +248,13 @@ SELECT
     steam.positive_ratings AS avaliacoes_positivas
 FROM
     steam
-        INNER JOIN
+INNER JOIN
     steamspy_tag_data ON steam.appid = steamspy_tag_data.appid
 WHERE
     steamspy_tag_data.co_op > 0
         AND steam.positive_ratings > steam.negative_ratings
-ORDER BY steam.positive_ratings DESC
+ORDER BY 
+    steam.positive_ratings DESC
 LIMIT 15;
 
 ```
@@ -256,8 +274,9 @@ FROM
     steamspy_tag_data ON steam.appid = steamspy_tag_data.appid
 WHERE
     steamspy_tag_data.singleplayer > 0
-        AND steam.positive_ratings < steam.negative_ratings
-ORDER BY steam.negative_ratings DESC
+    AND steam.positive_ratings < steam.negative_ratings
+ORDER BY 
+    steam.negative_ratings DESC
 LIMIT 15;
 ```
 ![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
@@ -272,8 +291,10 @@ SELECT
     steamspy_tag_data.e_sports 
 FROM
     steam
-        INNER JOIN
-    steamspy_tag_data ON steam.appid = steamspy_tag_data.appid
+INNER JOIN
+    steamspy_tag_data 
+ON 
+    steam.appid = steamspy_tag_data.appid
 WHERE
     steamspy_tag_data.e_sports > 0;
 ```
