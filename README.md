@@ -92,7 +92,182 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   Fontes:  **[VT323](https://fonts.google.com/specimen/VT323?query=vt)**
 
 ---
----
+
+# Perguntas
+### Pergunta 1 
+
+- Top 5 jogos mais populares (Com base no tempo gasto jogando e segundo as avaliações positivas)
+
+```sql
+SELECT 
+    name AS nome_do_jogo,
+    positive_ratings AS avaliações_positivas,
+    average_playtime AS horas_gastas_jogando
+FROM
+    steam
+WHERE
+    positive_ratings > 9000 
+    AND average_playtime > 10000
+LIMIT 5;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 2
+
+- Jogos que precisam ter idade mínima de 18 anos, do gênero ação e que rodam apenas em windows
+
+```sql
+SELECT 
+    name AS nome_do_jogo,
+    required_age AS idade_obrigatória,
+    genres AS genero,
+    platforms AS sistema_operacional
+FROM
+    steam
+WHERE
+    required_age = 18
+        AND genres LIKE 'Action'
+        AND platforms = 'windows'
+ORDER BY name ASC LIMIT 15;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 3
+
+- Quantidade em percentual de jogos disponibilizados gratuitamente em relação ao total de jogos
+
+```sql
+SELECT 
+    ROUND(((SELECT 
+                    COUNT(price)
+                FROM
+                    steam
+                WHERE
+                    price = 0) / COUNT(price) * 100),
+            2) AS porcentagem_jogos_gratuitos
+FROM
+    steam; 
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 4
+
+- Quais os 5 setups para os jogos mais bem avaliados da steam?
+
+```sql
+SELECT srd.steam_appid , s.positive_ratings as avaliacoes_positivas , s.name as jogos , srd.minimum as setup
+FROM steam AS s
+INNER JOIN steam_requirements_data as srd
+ON srd.steam_appid = s.appid
+ORDER BY s.positive_ratings DESC
+LIMIT 5;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 5
+
+- Quais os 5 setups para os jogos mais jogados da steam?
+
+```sql
+SELECT  s.appid , s.owners as quantidade_de_downloads, s.name as jogos , srd.minimum as setup 
+FROM steam AS s
+INNER JOIN steam_requirements_data as srd
+ON srd.steam_appid = s.appid
+ORDER BY s.owners DESC
+LIMIT 5;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 6
+
+- Quais os 3 setups dos jogos mais jogados da categoria multi-player?
+
+```sql
+SELECT srd.steam_appid , s.name, s.average_playtime,srd.minimum, s.categories
+FROM steam AS s
+INNER JOIN steam_requirements_data as srd
+ON srd.steam_appid = s.appid
+where categories like 'Multi-player'
+order by average_playtime desc
+LIMIT 3;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 7
+
+- Top 10 desenvolvedores com jogos mais jogados
+
+```sql
+SELECT 
+    developer AS desenvolvedores,
+    name AS nome_jogo,
+    average_playtime AS tempo_jogado
+FROM
+    steam
+WHERE
+    average_playtime > 0
+GROUP BY developer
+LIMIT 10;	
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 8
+
+- Jogos co-op com avaliações positivas maiores que negativas
+
+```sql
+SELECT 
+    steam.name AS jogos_co_op,
+    steam.positive_ratings AS avaliacoes_positivas
+FROM
+    steam
+        INNER JOIN
+    steamspy_tag_data ON steam.appid = steamspy_tag_data.appid
+WHERE
+    steamspy_tag_data.co_op > 0
+        AND steam.positive_ratings > steam.negative_ratings
+ORDER BY steam.positive_ratings DESC
+LIMIT 15;
+
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 9
+
+- Jogos single-player com avaliações negativas maiores que positivas
+
+```sql
+SELECT 
+    steam.name AS jogos_single_player,
+    steam.negative_ratings AS avaliacoes_negativas
+FROM
+    steam
+        INNER JOIN
+    steamspy_tag_data ON steam.appid = steamspy_tag_data.appid
+WHERE
+    steamspy_tag_data.singleplayer > 0
+        AND steam.positive_ratings < steam.negative_ratings
+ORDER BY steam.negative_ratings DESC
+LIMIT 15;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+
+### Pergunta 10
+
+- Jogos que mais estão presentes nos e-sports(esporte eletrônico)
+
+```sql
+SELECT 
+    steam.name as jogos_esports,
+    steamspy_tag_data.e_sports 
+FROM
+    steam
+        INNER JOIN
+    steamspy_tag_data ON steam.appid = steamspy_tag_data.appid
+WHERE
+    steamspy_tag_data.e_sports > 0;
+```
+![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
 
 ## 🦸 Autores
 
