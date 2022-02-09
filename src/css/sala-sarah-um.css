@@ -35,13 +35,13 @@ main{
     overflow-y: hidden;
     display: flex;
     justify-content: space-between;
-    overflow-y: hidden;
 }
 
 main > section > p, main > section > a{
     font-family: var(--vt323);
     font-size: 30px;
     color: black;
+    overflow-y: hidden;
 }
 
 .btn-continuar{

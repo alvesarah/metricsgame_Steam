@@ -40,7 +40,7 @@ header{
     color: var(--vermelho);
     text-transform: uppercase;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     overflow-y: hidden;
     
     -webkit-text-stroke-width: .5px;

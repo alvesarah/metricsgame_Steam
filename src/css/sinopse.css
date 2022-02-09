@@ -38,7 +38,7 @@ section{
 .descricao-steam > h1{
     margin-bottom: 20px;
     font-family: var(--vt323);
-    font-size: 52px;
+    font-size: 30px;
     text-transform: uppercase;
     color: white;
     
@@ -50,7 +50,7 @@ section{
 .descricao-steam > p{
     margin-bottom: 30px;
     font-family: var(--vt323);
-    font-size: 40px;
+    font-size: 36px;
     color: white;
     text-align: center;
 
