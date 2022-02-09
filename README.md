@@ -93,7 +93,16 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-# Perguntas
+## 📋 Sprints
+<img src="https://media.discordapp.net/attachments/940805763398516826/940807113171685406/fcd187a8-9104-43ae-a30f-bd518628a510.png?width=967&height=452" width="350" title="hover text">
+<img src="https://media.discordapp.net/attachments/940805763398516826/940807166246387722/9aba9079-8ffa-40c5-be4b-818fd4ac649b.png?width=973&height=452" width="350" title="hover text">
+<img src="https://media.discordapp.net/attachments/940805763398516826/940807324820463696/41df08ef-3726-4ae1-87c9-b769f460b8b7.png?width=680&height=452" width="350" title="hover text">
+<img src="https://media.discordapp.net/attachments/940805763398516826/940807409486688326/91248cb0-e07d-4202-b4b0-addd285f38f1.png?width=770&height=452" width="350" title="hover text">
+<img src="https://media.discordapp.net/attachments/940805763398516826/940807546460061766/896c703b-1ebd-4dce-b11a-ade7fba99fba.png?width=826&height=452" width="350" title="hover text">
+<img src="https://media.discordapp.net/attachments/940805763398516826/940807768313569361/unknown.png?width=827&height=452" width="350" title="hover text">
+<img src="https://media.discordapp.net/attachments/940805763398516826/940809559319122011/unknown.png?width=824&height=452" width="350" title="hover text">
+---
+## ❓ Perguntas
 ### Pergunta 1 
 
 - Top 5 jogos mais populares (Com base no tempo gasto jogando e segundo as avaliações positivas)
