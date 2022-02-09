@@ -586,7 +586,7 @@ LIMIT 1);
     <br>
     <sub><b>Rafaela Dias</b></sub>
 </a> 
-<a href="https://github.com/rafaeladns">🎸</a>
+<a href="https://github.com/rafaeladns">👽</a>
 <br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Rafaela-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafaela-sousa-8305a7224/)](https://www.linkedin.com/in/rafaela-sousa-8305a7224/) 
@@ -612,7 +612,7 @@ Além disso pude aprimorar as minhas softskills.</stong></p>
     <br>
     <sub><b>Sarah Alves</b></sub>
 </a>
-<a href="https://github.com/sashamoon">🐉</a>
+<a href="https://github.com/sashamoon">🦕</a>
 <br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Sarah-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sarahalvesoliveira/)](https://www.linkedin.com/in/sarahalvesoliveira/) 
