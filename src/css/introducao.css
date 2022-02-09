@@ -50,7 +50,7 @@ section{
 .descricao-steam > p{
     margin-bottom: 30px;
     font-family: var(--vt323);
-    font-size: 32px;
+    font-size: 36px;
     color: white;
     text-align: center;
 
@@ -69,7 +69,7 @@ a{
     font-family: var(--vt323);
     font-size: 36px;
     text-transform: uppercase;
-    color: var(--lilas);
+    color: var(--roxo-claro);
     border: none;
 
     -webkit-text-stroke-width: .5px;

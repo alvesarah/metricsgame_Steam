@@ -30,9 +30,8 @@ header{
 .btn-voltar-estatisca {
     position: absolute;
     bottom: 1%;
-  }
+}
   
-
 .perguntas > a{
     display: flex;
     justify-content: center;

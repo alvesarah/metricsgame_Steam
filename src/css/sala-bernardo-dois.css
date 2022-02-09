@@ -13,7 +13,7 @@ body {
 }
 
 .perguntas {
-  height: 50vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -53,6 +53,9 @@ body {
   align-items: flex-end;
 }
 
+.img-personagem {
+  width: 300px;
+}
 
 .btn-voltar-estatisca {
   position: absolute;
@@ -158,6 +161,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal > main > img{
+  width: 80%;
 }
 
 .closebtn {
