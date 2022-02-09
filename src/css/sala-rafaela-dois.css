@@ -53,6 +53,16 @@ body {
   align-items: flex-end;
 }
 
+.btn-voltar-estatisca {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--vt323);
+  font-size: 28px;
+  color: black;
+}
+
+
 .caixa-dialogo {
   width: 100%;
   height: 20vh;

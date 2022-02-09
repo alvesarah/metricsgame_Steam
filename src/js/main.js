@@ -50,6 +50,10 @@ function adicionaReset() {
            clearInterval(myInterval) 
        }
        $('.btn-reset').click((e)=>localStorage.clear())
+       $('.btn-voltar-mapa').click((e)=>{
+       
+
+       })
        
 }
 
