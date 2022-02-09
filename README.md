@@ -28,8 +28,8 @@ Análisar banco de dados cedido a partir tema escolhido (<a href="https://store.
 
 O layout da aplicação está disponível no Figma:
 
-<a href="https://www.figma.com/file/D41nbP0LDvkQfpi2z7JcjL/Hades-%7C-Barber-Lounge?node-id=1%3A2">
-  <img alt="Made by sashamoon and rafaeladns" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
+<a href="https://www.figma.com/file/U7q60nvZTSnQifSkoHPq8h/Layout-Jogo-Metrics-Game?node-id=0%3A1">
+  <img alt="Made by sashamoon" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
 ### Web
