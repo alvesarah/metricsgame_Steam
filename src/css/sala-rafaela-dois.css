@@ -140,7 +140,6 @@ main > section > p, main > section > a{
   height: 90vh;
   box-shadow: 0 0 0 10px var(--preto);
   position: relative;
-  overflow-y: hidden;
 
   -webkit-animation-name: example;
   -webkit-animation-duration: 0.5s;

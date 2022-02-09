@@ -125,10 +125,9 @@ main > section > p, main > section > a{
   background-color: white;
   overflow-x: hidden;
   width: 80%;
-  height: 90vh;
+  height: 100vh;
   box-shadow: 0 0 0 10px var(--preto);
   position: relative;
-  overflow-y: hidden;
 
   -webkit-animation-name: example; 
   -webkit-animation-duration: 0.5s; 

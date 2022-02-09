@@ -128,7 +128,6 @@ main > section > p, main > section > a{
   height: 100vh;
   box-shadow: 0 0 0 10px var(--preto);
   position: relative;
-  overflow-y: hidden;
 
   -webkit-animation-name: example; 
   -webkit-animation-duration: 0.5s; 
@@ -152,7 +151,7 @@ header{
 }
 
 .modal > main > img{
-  width: 80%;
+  width: 90%;
 }
 
 .closebtn {
