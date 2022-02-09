@@ -69,7 +69,7 @@ $ code .
 ---
 ## 🛠 Tecnologias
 
-Utilizamos um banco de dados sql para carregar os dados fornecidos em um documento csv e a partir dele montamos as query utilizando o MySQL Workbench, depois carregamos as query no MetaBase fornecido pela Resilia.
+Utilizamos um banco de dados sql para carregar os dados fornecidos em um documento csv e a partir dele montamos as query utilizando o MySQL Workbench, depois carregamos as query no PowerBI fornecido pela Resilia.
 
 As seguintes ferramentas foram usadas na construção do projeto:
 #### **Website**
@@ -517,7 +517,7 @@ LIMIT 1);
     <br>
     <sub><b>Bernardo Moura</b></sub>
 </a> 
-<a href="https://github.com/bernardobdr">🎸</a>
+<a href="https://github.com/bernardobdr">🐻</a>
 <br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Bernardo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bernardomoura/)](https://www.linkedin.com/in/bernardomoura/) 
@@ -540,7 +540,7 @@ LIMIT 1);
     <br>
     <sub><b>Bruno Santana de Sá</b></sub>
 </a> 
-<a href="https://github.com/brunosa91">🎸</a>
+<a href="https://github.com/brunosa91">🙈</a>
 <br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Bruno-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brunoasantanadesa/)](https://www.linkedin.com/in/brunoasantanadesa/) 
@@ -563,7 +563,7 @@ LIMIT 1);
     <br>
     <sub><b>Mauricio Oliveira</b></sub>
 </a> 
-<a href="https://github.com/Mauriciiow">🎸</a>
+<a href="https://github.com/Mauriciiow">🐭</a>
 <br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Mauricio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mauricio-oliveira-vila-nova-86922b214/)](https://www.linkedin.com/in/mauricio-oliveira-vila-nova-86922b214/) 
@@ -594,7 +594,10 @@ LIMIT 1);
 
 </td>
 <td>
-<p><stong>Experiência:</stong></p>
+<p><stong>Experiência: Foi uma experiência muito desafiadora mas com ela eu pude me desenvolver melhor trabalhando em equipe e usando novas ferramentas onde eu nunca tinha tido um contato prévio. 
+Tiveram momentos em que eu me senti insegura mas ao ver todos os integrantes do meu grupo e eu trabalhando em equipe e um ajudando o outro fui me sentindo mais segura. 
+Em relação as ferramentas utilizadas eu tive uma familiaridade com o MySQL, gostei de ter aprendido a mexer nessa ferramenta e gostei muito dos resultados que eu e meu grupo obtivemos. 
+Além disso pude aprimorar as minhas softskills.</stong></p>
 </td>
 </tr>
 </table>
@@ -609,7 +612,7 @@ LIMIT 1);
     <br>
     <sub><b>Sarah Alves</b></sub>
 </a>
-<a href="https://github.com/sashamoon">🦄</a>
+<a href="https://github.com/sashamoon">🐉</a>
 <br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Sarah-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sarahalvesoliveira/)](https://www.linkedin.com/in/sarahalvesoliveira/) 
