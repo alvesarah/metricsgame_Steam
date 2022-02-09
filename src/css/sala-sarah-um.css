@@ -35,6 +35,7 @@ main{
     overflow-y: hidden;
     display: flex;
     justify-content: space-between;
+    overflow-y: hidden;
 }
 
 main > section > p, main > section > a{
