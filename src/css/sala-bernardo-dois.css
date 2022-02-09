@@ -151,8 +151,12 @@ header{
   justify-content: center;
 }
 
-.modal > main > img{
+.grafico_menor{
   width: 70%;
+}
+
+.grafico_padrao{
+  width: 80%;
 }
 
 .closebtn {
