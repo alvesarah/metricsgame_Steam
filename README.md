@@ -172,7 +172,7 @@ ORDER BY
     s.positive_ratings DESC
 LIMIT 5;
 ```
-![image](https://media.discordapp.net/attachments/939971983536439368/940415442483302400/setup_dos_jogos_com_melhor_ratingBRUNO_page-0001.jpg?width=781&height=452)
+![image](https://media.discordapp.net/attachments/939971983536439368/940787136867729478/setup_dos_jogos_com_melhor_rating_1.jpg)
 
 ### Pergunta 5
 
@@ -236,7 +236,7 @@ GROUP BY
     developer
 LIMIT 10;	
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940788537681412166/grafico_developers_jogos_mais_jogados_1_page-0001.jpg?width=781&height=452)
 
 ### Pergunta 8
 
@@ -258,7 +258,7 @@ ORDER BY
 LIMIT 15;
 
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940788538373451776/query_jogos_cop_avaliacoes_positivas_maiores_que_negativas_1_page-0001.jpg?width=781&height=452)
 
 ### Pergunta 9
 
@@ -279,7 +279,7 @@ ORDER BY
     steam.negative_ratings DESC
 LIMIT 15;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940788538847420436/query_jogos_single-player_avaliacoes_negativa_maiores_que_positivas_1_page-0001.jpg?width=781&height=452)
 
 ### Pergunta 10
 
@@ -298,7 +298,7 @@ ON
 WHERE
     steamspy_tag_data.e_sports > 0;
 ```
-![image](https://user-images.githubusercontent.com/67427249/123199838-ff116100-d485-11eb-9d32-a86c56a6a686.png)
+![image](https://media.discordapp.net/attachments/939971983536439368/940788538033709137/grafico_jogos_esports_2_page-0001.jpg?width=781&height=452)
 
 ### Pergunta 11
 
@@ -525,7 +525,7 @@ LIMIT 1);
 
 </td>
 <td>
-<p><stong>Experiência:</stong></p>
+<p><stong>Experiência: Esse projeto foi desafiador desde o início, contudo o grupo se organizou e separou com clareza todos os tópicos que deveriam ter mais atenção, e nas dailys as falhas eram corrigidas de acordo com o decorrer do projeto. Além disso, sempre mantivemos os membros atualizados quando não podiam participar das reuniões. Assim sendo, foi uma experiência que me fez crescer e desenvolver bastante ao trabalhar em grupo.</stong></p>
 </td>
 </tr>
 </table>
