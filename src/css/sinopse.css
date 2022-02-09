@@ -40,7 +40,7 @@ section{
     font-family: var(--vt323);
     font-size: 36px;
     text-transform: uppercase;
-    color: white;
+    color: black;
     
     -webkit-text-stroke-width: .2px;
     -webkit-text-stroke-color: var(--roxo-escuro);
@@ -51,7 +51,7 @@ section{
     margin-bottom: 30px;
     font-family: var(--vt323);
     font-size: 32px;
-    color: white;
+    color: black;
     text-align: center;
 
     -webkit-text-stroke-width: 1px;
