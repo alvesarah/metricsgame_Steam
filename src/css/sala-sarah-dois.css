@@ -27,6 +27,12 @@ header{
     z-index: 100;
 }
 
+.btn-voltar-estatisca {
+    position: absolute;
+    bottom: 1%;
+  }
+  
+
 .perguntas > a{
     display: flex;
     justify-content: center;

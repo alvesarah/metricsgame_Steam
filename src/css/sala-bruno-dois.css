@@ -77,6 +77,15 @@ main > section > p {
   color: black;
 }
 
+.btn-voltar-estatisca {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--vt323);
+  font-size: 28px;
+  color: black;
+}
+
 /* MODAL */
 
 @-webkit-keyframes example {

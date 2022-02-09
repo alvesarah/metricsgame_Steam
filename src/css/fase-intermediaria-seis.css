@@ -40,7 +40,7 @@ main > section {
   padding: 25px;
   overflow-y: hidden;
 }
-.reset {
+.btn-reset {
   position: absolute;
   left: 44%;
   top: 30%;
