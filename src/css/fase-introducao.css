@@ -39,5 +39,5 @@ main > section > p, main > section > a{
     display: flex;
     justify-content: end;
     align-items: flex-end;
-    /* margin-top: 1rem; */
+    width: 50%;
 }

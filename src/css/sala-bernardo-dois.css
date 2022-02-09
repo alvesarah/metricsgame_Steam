@@ -40,7 +40,7 @@ header{
   color: var(--vermelho);
   text-transform: uppercase;
   text-align: center;
-  padding: 10px;
+  padding: 30px;
   overflow-y: hidden;
   
   -webkit-text-stroke-width: .5px;
@@ -125,7 +125,7 @@ main > section > p, main > section > a{
   background-color: white;
   overflow-x: hidden;
   width: 80%;
-  height: 96vh;
+  height: 100vh;
   box-shadow: 0 0 0 10px var(--preto);
   position: relative;
   overflow-y: hidden;
