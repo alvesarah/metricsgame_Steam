@@ -1,18 +1,22 @@
-body {
+body{
   width: 100%;
   height: 100vh;
-  background-image: url(../image/backgrounds/laboratorio.gif);
+  background-image: url(../image/backgrounds/background_laboratorio.gif);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: hidden;
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
+header{
+  height: 10vh;
 }
 
-.perguntas {
+.container{
+  width: 100%;
+  height: 90vh;
+}
+
+.perguntas{
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +27,7 @@ body {
   z-index: 100;
 }
 
-.perguntas > a {
+.perguntas > a{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,78 +40,67 @@ body {
   color: var(--vermelho);
   text-transform: uppercase;
   text-align: center;
-
-  -webkit-text-stroke-width: 0.5px;
+  padding: 10px;
+  overflow-y: hidden;
+  
+  -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
 }
 
-.perguntas > a:hover {
+.perguntas > a:hover{
   color: var(--roxo-escuro);
 }
 
-.personagem {
-  height: 70vh;
+.personagem{
+  height: 65vh;
   position: relative;
   display: flex;
   justify-content: right;
   align-items: flex-end;
 }
 
-.caixa-dialogo {
+.img-personagem{
+  width: 300px;
+}
+
+.caixa-dialogo{
   width: 100%;
   height: 20vh;
   background-color: #ffffff7c;
   padding: 25px;
   overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
-main > section > p {
+main > section > p, main > section > a{
   font-family: var(--vt323);
-  font-size: 32px;
-}
-
-.btn-voltar-mapa {
-  text-align: end;
-  margin-top: 70px;
-  cursor: pointer;
-  list-style: none;
-  text-decoration: none;
-  font-family: var(--vt323);
-  font-size: 28px;
+  font-size: 30px;
   color: black;
 }
 
 .btn-voltar-estatisca {
-  cursor: pointer;
-  list-style: none;
-  text-decoration: none;
-  font-family: var(--vt323);
-  font-size: 28px;
-  color: black;
+  position: absolute;
+  bottom: 1%;
+}
+
+.btn-voltar-mapa{
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
 
 /* MODAL */
 
 @-webkit-keyframes example {
-  from {
-    top: -100px;
-    opacity: 0;
-  }
-  to {
-    top: 0px;
-    opacity: 1;
-  }
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
 }
 
+
 @keyframes example {
-  from {
-    top: -100px;
-    opacity: 0;
-  }
-  to {
-    top: 0px;
-    opacity: 1;
-  }
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
 }
 
 .modal-container:target {
@@ -115,7 +108,8 @@ main > section > p {
   position: absolute;
 }
 
-.modal-container {
+
+.modal-container{
   width: 100vw;
   min-height: 100vh;
   position: fixed;
@@ -127,22 +121,21 @@ main > section > p {
   align-items: center;
 }
 
-.modal {
+.modal{
   background-color: white;
   overflow-x: hidden;
   width: 80%;
-  height: 110vh;
+  height: 100vh;
   box-shadow: 0 0 0 10px var(--preto);
   position: relative;
-  overflow-y: hidden;
 
-  -webkit-animation-name: example;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: example; 
+  -webkit-animation-duration: 0.5s; 
   animation-name: example;
   animation-duration: 0.5s;
 }
 
-header {
+header{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -151,10 +144,14 @@ header {
   font-size: 30px;
 }
 
-.modal > main {
+.modal > main{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal > main > img{
+  width: 80%;
 }
 
 .closebtn {

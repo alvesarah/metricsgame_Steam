@@ -41,6 +41,7 @@ main > section > p, main > section > a{
     font-family: var(--vt323);
     font-size: 30px;
     color: black;
+    overflow-y: hidden;
 }
 
 .btn-continuar{

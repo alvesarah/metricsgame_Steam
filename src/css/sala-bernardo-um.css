@@ -1,23 +1,32 @@
 body {
   width: 100%;
   height: 100vh;
-  background-image: url(../image/backgrounds/laboratoria.gif);
+  background-image: url(../image/backgrounds/background_loja_eletronicos.gif);
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
 }
 
+header{
+  height: 10vh;
+}
+
 main {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .personagem {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   justify-content: right;
   align-items: flex-end;
 }
+
+.img-personagem {
+  width: 300px;
+}
+
 
 .caixa-dialogo {
   width: 100%;
@@ -28,7 +37,6 @@ main {
   display: flex;
   justify-content: space-between;
 }
-
 
 main > section > p, main > section > a{
   font-family: var(--vt323);
