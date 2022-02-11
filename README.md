@@ -549,7 +549,7 @@ LIMIT 1);
 <br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Bernardo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bernardomoura/)](https://www.linkedin.com/in/bernardomoura/) 
-[![Gmail Badge](https://img.shields.io/badge/-rafaeladiasneves95@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeladiasneves95@gmail.com)](mailto:rafaeladiasneves95@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-bernardosilvabdr@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:bernardosilvabdr@gmail.com)](mailto:bernardosilvabdr@gmail.com)
 
 </td>
 <td>
@@ -572,7 +572,7 @@ LIMIT 1);
 <br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Bruno-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brunoasantanadesa/)](https://www.linkedin.com/in/brunoasantanadesa/) 
-[![Gmail Badge](https://img.shields.io/badge/-rafaeladiasneves95@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeladiasneves95@gmail.com)](mailto:rafaeladiasneves95@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-brunosantana.engenharia@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:brunosantana.engenharia@gmail.com)](mailto:brunosantana.engenharia@gmail.com)
 
 </td>
 <td>
@@ -595,7 +595,7 @@ LIMIT 1);
 <br>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Mauricio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mauricio-oliveira-vila-nova-86922b214/)](https://www.linkedin.com/in/mauricio-oliveira-vila-nova-86922b214/) 
-[![Gmail Badge](https://img.shields.io/badge/-rafaeladiasneves95@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeladiasneves95@gmail.com)](mailto:rafaeladiasneves95@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-mauricioliveira639@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mauricioliveira639@gmail.com)](mailto:mauricioliveira639@gmail.com)
 
 </td>
 <td>
@@ -648,7 +648,7 @@ Além disso pude aprimorar as minhas softskills.</stong></p>
 
 </td>
 <td>
-<p><stong>Experiência:</stong></p>
+<p><stong>Experiência: Eu desde o princípio gostei bastante da ideia do projeto e fiquei muito animada para fazer. Durante o desenvolvimento do mesmo, tiveram alguns desafios como fazer o gráfico e a organizar o tempo para conseguir realizar tudo que propomos, mas no final deu tudo certo e foi uma experiência incrível.</stong></p>
 </td>
 </tr>
 </table>
