@@ -37,7 +37,7 @@ O layout da aplicação está disponível no Figma:
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="" title="#" src="" width="400px">
 
-  <img alt="" title="#" src="./src/assets/metricsgame_jogo.mp4" width="400px">
+  <video alt="" title="#" src="./src/assets/metricsgame_jogo.gif" width="400px">
 </p>
 
 ---
