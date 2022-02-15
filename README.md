@@ -11,12 +11,12 @@
 
 <!--ts-->
    * [Sobre](#Sobre-o-Projeto)
-   * [Funcionalidades](#Funcionalidades)
-   * [Layout](#Layout)
+   * [Funcionalidades](#funcionalidades)
+   * [Layout](#layout)
         * [Web](#web)
-   * [Como executar o projeto](#Como-executar-o-projeto)
+   * [Como executar o projeto](#como-executar-o-projeto)
       * [Pre Requisitos](#pre-requisitos)
-      * [Rodando a aplicação web](#local-files)
+      * [Rodando a aplicação web](#rodando-a-aplicação-web)
    * [Tecnologias](#tecnologias)
    * [Sprints](#sprints)
    * [Perguntas](#perguntas)
