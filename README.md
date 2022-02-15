@@ -10,7 +10,7 @@
 ## 🗂️ Indice
 
 <!--ts-->
-   * [Sobre](#💻-sobre-o-Projeto)
+   * [Sobre](#sobre-o-Projeto)
    * [Funcionalidades](#funcionalidades)
    * [Layout](#layout)
         * [Web](#web)
