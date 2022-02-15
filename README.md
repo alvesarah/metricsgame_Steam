@@ -4,8 +4,25 @@
 <h1 align="center">Metrics Game</h1>
 
 <h4 align="center"> 
-	🚧  Metrics Game 🎮📏 Em andamento  🚧
+	✅  Metrics Game 🎮📏 Concluído  ✅
 </h4>
+
+## 🗂️ Indice
+
+<!--ts-->
+   * [Sobre](#Sobre-o-Projeto)
+   * [Funcionalidades](#Funcionalidades)
+   * [Layout](#Layout)
+        * [Web](#web)
+   * [Como executar o projeto](#Como-executar-o-projeto)
+      * [Pre Requisitos](#pre-requisitos)
+      * [Rodando a aplicação web](#local-files)
+   * [Tecnologias](#tecnologias)
+   * [Sprints](#sprints)
+   * [Perguntas](#perguntas)
+   * [Autores](#autores)
+   * [Licença](#licença)
+<!--te-->
 
 ## 💻 Sobre o Projeto
 Este projeto teve como desafios para nosso grupo:
@@ -599,7 +616,7 @@ LIMIT 1);
 
 </td>
 <td>
-<p><stong>Experiência:</stong></p>
+<p><stong>Experiência: Minha experiência nesse projeto desde o início foi uma das melhores, a ideia passada pela equipe me empolgou muito pois sabia que conseguiria praticar alguns assuntos passados. Tiveram momentos de dificuldade porém a equipe sempre esteve disposta a ajudar e no fim só absorvi o sucesso.</stong></p>
 </td>
 </tr>
 </table>
