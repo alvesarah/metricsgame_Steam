@@ -576,7 +576,7 @@ LIMIT 1);
 
 </td>
 <td>
-<p><stong>Experiência:</stong></p>
+<p><stong>Experiência: Minha experiência nesse projeto foi incrível,pois além de uma equipe extraordinária da qual consegui colher muitos conhecimentos através das trocas de ideias, também foi possível me desenvolver mais sobre o universo de dados realizando cosultas pensadas por todo time através do mysql. Todo gerenciamento das atividades foram feitas pela metologia Scrum e Kanban. Posso dizer que saí muito melhor desse após esse projeto, agradeço a todos os amigos pois juntos fomos capazes de entregar um ótimo trabalho.</stong></p>
 </td>
 </tr>
 </table>
